@@ -6,7 +6,8 @@ app = Flask(__name__)
 @app.route("/recipe_prob")
 def calculate_recipe():
     # request.args.get('rating')
-    # request.args.get('list')
+    # request.args.get('listIngRecipe')
+    # request.args.get('numIngUser')
     return "YEAH!"
 
 
