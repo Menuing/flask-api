@@ -1,8 +1,8 @@
 from flask import Flask, request, Response
-from RecipePredictionController import RecipePredictionController
+import RecipePredictionController as rpcm
 
 app = Flask(__name__)
-rpc = RecipePredictionController("logreg.joblib")
+rpc = rpcm.RecipePredictionController("logreg.joblib")
 
 # This method will return the probability of a user liking a recipe
 # /recipe_prob?rating=4.2&numIngUser=3&listIngRecipe=dried%20fruit&listIngRecipe=dill&listIngRecipe=dallas&listIngRecipe=curry
