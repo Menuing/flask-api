@@ -1,5 +1,5 @@
 from flask import Flask, request, Response
-from controller.RecipePredictionController import RecipePredictionController
+from app.controller.RecipePredictionController import RecipePredictionController
 
 app = Flask(__name__)
 rpc = RecipePredictionController("logreg.joblib")
